@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+    body {
+        width: 100%;
+    }
+    canvas {
+        border: 1px solid ghostwhite;
+        background-color: #F0F8FF;
+        margin: 0% 18%;
+    }
+    #ButtonLR {
+        font-family: fantasy;
+        background-color: indianred;
+        color: white;
+        height: 30px;
+        width: 70px;
+        border-radius: 10px;
+        font-size: 15px;
+        margin: 0px 40px;
+    }
+    #hitButton {
+        font-family: fantasy;
+        background-color: darkcyan;
+        color: white;
+        height: 50px;
+        width: 60px;
+        border-radius: 50%;
+        font-size: 15px;
+    }
+    #placeButton {
+        margin: 0px 30%;
+        display: flex;
+        max-width: 800px;
+        flex-direction: row;
+    }
+ 
+    #placeRule {
+        margin: 0px 43%;
+        display: flex;
+        font-family: 'Arvo';
+        font-weight: bold;
+        color :cornflowerblue;
+    }
+    .ctrl-button {
+        flex: 3;
+    }
+    .ctrl-score {
+        flex-grow: 10;
+        justify-content: flex-end;
+    }
+    .ctrl-life {
+        flex-grow: 10;
+        justify-content: flex-start;
+    }
+    /* -----------SNACKBAR Rules----------------- */
+    #snackbarRule {
+        visibility: hidden;
+        min-width: 250px;
+        margin-left: -125px;
+        background-color: rgba(98, 98, 98, 0.9);
+        color: wheat;
+        text-align: center;
+        border-radius: 2px;
+        padding: 16px;
+        position: fixed;
+        z-index: 1;
+        left: 30%;
+        bottom: 30px;
+        font-size: 17px;
+        }
+
+        #snackbarRule.show {
+        visibility: visible;
+        -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        }
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- edit -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="project.css">
+</head>
+
+<body onload="start()">
+    <!-- <canvas ></canvas> -->
+    </br>
+    <hr>
+    <div class="container-fluid" id="placeButton">
+        <!-- button -->
+        <div class="ctrl-life">
+            Life : <span id="gameLife">5</span>
+        </div>
+        <button id="ButtonLR" class="ctrl-button" onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()"> Left</button>
+        <button id="hitButton" class="ctrl-button" onclick="dropBall()"> HIT!</button>
+        <button id="ButtonLR" class="ctrl-button" onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()"> Right </button>
+        <div class="ctrl-score">
+            Score : <span id="gameScore">0</span>
+        </div>
+    </div>
+        <!-- rules -->
+    <div class="container-fluid" id="placeRule">
+        <br><p onclick="showRules()">---how can I play?---</p>
+    </div>
+    
+
+    <div id="snackbarRule">
+        Move monster to the left by click 'Left' button, press 'A' on keyboard, or press left arrow on keyboard</br>
+        Move monster to the right by click 'Right' button, press 'D' on keyboard, or press right arrow on keyboard</br>
+        Drop the monster by click 'Hit' button, or press down arrow on keyboard</br> </br>
+        
+        Hit the green for 100 points | Hit the purple for 200 points | Hit the red and you'll get punishment</br>
+        You only have 5 lifes
+    </div>
+  
+    <script src="script.js"></script>
+</body>
+
+</html>

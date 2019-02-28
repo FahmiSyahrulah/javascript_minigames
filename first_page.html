@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Arvo');
+
+        body {
+            background-image: url(main.png);
+            background-size: cover;
+        }
+
+        .start {
+            font-size: 40px;
+            font-weight: bold;
+            font-family: 'Arvo';
+            transition: transform .2s;
+            text-align: center;
+            display: inline-block;
+            margin: 0 35%;
+            /* text-decoration: none; */
+        }
+
+        .start:hover {
+            /* transform: scale(1.5);
+            transform: scale(1.5);         */
+            transform: scale(2.5);
+        }
+
+        .rule{
+            /* text-align: center; */
+            display: inline-block;
+            margin: 0 0;
+            font-size: 15px;
+            top: 0%;
+            font-family: 'Arvo';
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+                /* Popup container - can be anything you want */
+        #snackbar {
+        visibility: hidden;
+        min-width: 250px;
+        margin-left: -125px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        border-radius: 2px;
+        padding: 16px;
+        position: fixed;
+        z-index: 1;
+        left: 50%;
+        bottom: 30px;
+        font-size: 17px;
+        }
+
+        #snackbar.show {
+        visibility: visible;
+        -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        }
+
+        @-webkit-keyframes fadein {
+        from {bottom: 0; opacity: 0;} 
+        to {bottom: 30px; opacity: 1;}
+        }
+
+        @keyframes fadein {
+        from {bottom: 0; opacity: 0;}
+        to {bottom: 30px; opacity: 1;}
+        }
+
+        @-webkit-keyframes fadeout {
+        from {bottom: 30px; opacity: 1;} 
+        to {bottom: 0; opacity: 0;}
+        }
+
+        @keyframes fadeout {
+        from {bottom: 30px; opacity: 1;}
+        to {bottom: 0; opacity: 0;}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="rule">
+            <img src="icon-info.png" onclick="myFunction()" width="45" height="38">
+        </div>
+        </br>
+        <div class="start">
+            <a href="project.html">DARE TO PLAY</a>
+            <!-- <span>AYO MULAI!</span> -->
+            
+        </div>
+        
+            <!-- <div  onclick="myFunction()">tentang game ini </div> -->
+            <div id="snackbar">SINCE YESTERDAY -FahmiAnbar</div>
+    </div>
+    
+
+
+    <script language="javascript" type="text/javascript">
+        function myFunction() {
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function () {
+                x.className = x.className.replace("show", "");
+            }, 5000);
+        }
+    </script>
+
+
+</body>
+
+</html>
